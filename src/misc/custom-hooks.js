@@ -1,6 +1,6 @@
-import { useReducer, useInsertionEffect } from 'react';
+import { useReducer, useEffect } from 'react';
 
-function usePersistedReducer(prevState, action) {
+function showsReducer(prevState, action) {
   switch (action.type) {
     case 'ADD': {
       return [...prevState, action.showId];
